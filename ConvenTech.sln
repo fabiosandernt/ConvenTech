@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvenTech.Application", "ConvenTech.Application\ConvenTech.Application.csproj", "{6D28D28B-8FAD-48FD-8253-328F6E4FC579}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C} = {AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvenTech.Domain", "ConvenTech.Domain\ConvenTech.Domain.csproj", "{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvenTech.Infrastructure", "ConvenTech.Infrastructure\ConvenTech.Infrastructure.csproj", "{93377D75-7862-4EE9-B9C9-9102B22D3FF5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C} = {AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvenTech.Api", "ConvenTech.Api\ConvenTech.Api.csproj", "{07DA23D2-5DB7-4C90-AC5C-D1B37F375421}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D28D28B-8FAD-48FD-8253-328F6E4FC579} = {6D28D28B-8FAD-48FD-8253-328F6E4FC579}
+		{93377D75-7862-4EE9-B9C9-9102B22D3FF5} = {93377D75-7862-4EE9-B9C9-9102B22D3FF5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvenTech.CrossCutting", "ConvenTech.CrossCutting\ConvenTech.CrossCutting.csproj", "{3756816B-F4FD-45BC-9A7E-63F2BD697CF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D28D28B-8FAD-48FD-8253-328F6E4FC579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D28D28B-8FAD-48FD-8253-328F6E4FC579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D28D28B-8FAD-48FD-8253-328F6E4FC579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D28D28B-8FAD-48FD-8253-328F6E4FC579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD51F6C2-2325-487D-9C9D-1BF5F6A01D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93377D75-7862-4EE9-B9C9-9102B22D3FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93377D75-7862-4EE9-B9C9-9102B22D3FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93377D75-7862-4EE9-B9C9-9102B22D3FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93377D75-7862-4EE9-B9C9-9102B22D3FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DA23D2-5DB7-4C90-AC5C-D1B37F375421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DA23D2-5DB7-4C90-AC5C-D1B37F375421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DA23D2-5DB7-4C90-AC5C-D1B37F375421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DA23D2-5DB7-4C90-AC5C-D1B37F375421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3756816B-F4FD-45BC-9A7E-63F2BD697CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3756816B-F4FD-45BC-9A7E-63F2BD697CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3756816B-F4FD-45BC-9A7E-63F2BD697CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3756816B-F4FD-45BC-9A7E-63F2BD697CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA92EC00-979F-405C-8A31-D53F61CB5E88}
+	EndGlobalSection
+EndGlobal
