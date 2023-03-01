@@ -1,6 +1,5 @@
 ﻿using ConvenTech.CrossCutting.BaseEntity;
 using ConvenTech.CrossCutting.Utils;
-
 using ConvenTech.Domain.Validator;
 using ConvenTech.Domain.ValueObject;
 using FluentValidation;
