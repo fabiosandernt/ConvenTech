@@ -1,5 +1,4 @@
-﻿
-namespace ConvenTech.Domain.Usuario.ValueObject
+﻿namespace ConvenTech.Domain.ValueObject
 {
     public class Email
     {
@@ -10,7 +9,7 @@ namespace ConvenTech.Domain.Usuario.ValueObject
 
         public Email(string email)
         {
-            this.Valor = email ?? throw new ArgumentNullException(nameof(email));
+            Valor = email ?? throw new ArgumentNullException(nameof(email));
         }
 
         public string Valor { get; set; }

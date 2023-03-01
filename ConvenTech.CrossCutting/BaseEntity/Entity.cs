@@ -1,5 +1,5 @@
 ﻿
-namespace ConvenTech.CrossCutting.Repository
+namespace ConvenTech.CrossCutting.BaseEntity
 {
     public class Entity<T>
     {

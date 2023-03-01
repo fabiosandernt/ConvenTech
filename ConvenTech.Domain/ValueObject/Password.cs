@@ -1,5 +1,4 @@
-﻿
-namespace ConvenTech.Domain.Usuario.ValueObject
+﻿namespace ConvenTech.Domain.ValueObject
 {
     public class Password
     {
@@ -9,7 +8,7 @@ namespace ConvenTech.Domain.Usuario.ValueObject
         }
         public Password(string valor)
         {
-            this.Valor = valor ?? throw new ArgumentNullException(nameof(Password));
+            Valor = valor ?? throw new ArgumentNullException(nameof(Password));
         }
 
         public string Valor { get; set; }

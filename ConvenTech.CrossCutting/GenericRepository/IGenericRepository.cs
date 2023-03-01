@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace ConvenTech.CrossCutting.Repository 
+namespace ConvenTech.CrossCutting.GenericRepository 
 { 
     public interface IGenericRepository <T> where T : class
     {

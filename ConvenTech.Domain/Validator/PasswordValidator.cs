@@ -1,9 +1,9 @@
-﻿using ConvenTech.Domain.Usuario.ValueObject;
+﻿using ConvenTech.Domain.ValueObject;
 using FluentValidation;
 using System.Text.RegularExpressions;
 
 
-namespace ConvenTech.Domain.Usuario.Rules
+namespace ConvenTech.Domain.Validator
 {
     public class PasswordValidator : AbstractValidator<Password>
     {

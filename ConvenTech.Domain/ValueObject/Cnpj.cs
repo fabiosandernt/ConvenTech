@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 
 
-namespace ConvenTech.Domain.Cliente.ValueObjects
+namespace ConvenTech.Domain.ValueObject
 {
     public class Cnpj : IEquatable<Cnpj>
     {

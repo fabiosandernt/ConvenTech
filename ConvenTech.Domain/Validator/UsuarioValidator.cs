@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using ConvenTech.Domain.Account;
 
-namespace ConvenTech.Domain.Usuario.Rules
+namespace ConvenTech.Domain.Validator
 {
     public class UsuarioValidator : AbstractValidator<Usuario>
     {

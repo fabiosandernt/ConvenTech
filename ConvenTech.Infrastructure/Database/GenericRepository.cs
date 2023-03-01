@@ -1,19 +1,20 @@
-﻿using ConvenTech.CrossCutting.Repository;
+﻿
+using ConvenTech.CrossCutting.GenericRepository;
 using ConvenTech.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace ConvenTech.Infrastructure.Database
 {
-    public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected DbSet<T> Query { get; set; }
         protected DbContext Context { get; set; }
 
         public GenericRepository(ConvenTechContext context)
         {
-            Context = context;
-            Query = Context.Set<T>();
+            this.Context = context;
+            this.Query = Context.Set<T>();
         }
         public async Task Add(T entity)
         {

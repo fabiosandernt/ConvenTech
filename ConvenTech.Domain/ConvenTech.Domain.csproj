@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Cliente\Enum\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ConvenTech.CrossCutting\ConvenTech.CrossCutting.csproj" />
   </ItemGroup>
 

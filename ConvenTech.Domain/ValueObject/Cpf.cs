@@ -1,6 +1,4 @@
-﻿
-
-namespace ConvenTech.Domain.Cliente.ValueObjects
+﻿namespace ConvenTech.Domain.ValueObject
 {
     public class Cpf : IEquatable<Cpf>
     {
