@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ConvenTech.Domain.Validator
 {
     
-        public class CnpjValidator : AbstractValidator<CnpjVo>
+        public class CnpjValidator : AbstractValidator<Cnpj>
         {
             private const string Pattern = @"^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$";
 

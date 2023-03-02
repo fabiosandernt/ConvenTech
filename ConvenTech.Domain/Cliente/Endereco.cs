@@ -1,8 +1,8 @@
 ﻿using ConvenTech.CrossCutting.BaseEntity;
 
-namespace ConvenTech.Domain.ValueObject
+namespace ConvenTech.Domain.Cliente
 {
-    public class Endereco: Entity<Guid>
+    public class Endereco : Entity<Guid>
     {
         public string Logradouro { get; private set; }
         public string Numero { get; private set; }
@@ -21,6 +21,7 @@ namespace ConvenTech.Domain.ValueObject
             Cidade = cidade;
             Estado = estado;
             Cep = cep;
-        }            
+        }
+        public virtual ICollection<Cliente> Clientes { get; set; }
     }
 }
