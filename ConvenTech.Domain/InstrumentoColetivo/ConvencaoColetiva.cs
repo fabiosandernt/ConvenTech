@@ -3,9 +3,14 @@
 namespace ConvenTech.Domain.InstrumentoColetivo
 {
     public class ConvencaoColetiva: Entity<Guid>    {
-        
-        public string NumeroProtocolo { get; set; }
-        public string Cnpj { get; set; }
+
+        public string NumeroRegistro { get; set; }
+        public string NumeroProcesso { get; set; }
+        public string NumeroSolicitacao { get; set; }
+        public string SindicatoTrabalhador { get; set; }
+        public string SindicatoPatronal { get; set; }
+        public string TipoInstrumentoColetivo { get; set; }   
         public ICollection<Vigencia> Vigencias { get; set; }
+      
     }
 }

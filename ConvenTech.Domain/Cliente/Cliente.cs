@@ -1,4 +1,5 @@
 ﻿using ConvenTech.CrossCutting.BaseEntity;
+using ConvenTech.Domain.Account;
 using ConvenTech.Domain.ValueObject;
 
 namespace ConvenTech.Domain.Cliente
@@ -12,6 +13,8 @@ namespace ConvenTech.Domain.Cliente
         public string Telefone { get; private set; }
         public Email Email { get; private set; }
         public Password Password { get; private set; }
+        public Usuario Usuario { get; private set; } = new Usuario();
+        public PlanoEnum Plano { get; set; }
 
     }
 }
