@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConvenTech.Domain.Plano
 {
-    internal class Plano
-    {
-    }
+    
+        public enum PlanoEnum
+        {
+            Basico,
+            Premimum,
+            Vip
+        }
+   
 }

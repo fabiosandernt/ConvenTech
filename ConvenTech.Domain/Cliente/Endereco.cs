@@ -2,7 +2,7 @@
 
 namespace ConvenTech.Domain.Cliente
 {
-    public class Endereco : Entity<Guid>
+    public abstract class Endereco : Entity<Guid>
     {
         public string Logradouro { get; private set; }
         public string Numero { get; private set; }

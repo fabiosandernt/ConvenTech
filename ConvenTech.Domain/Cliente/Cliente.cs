@@ -4,17 +4,14 @@ using ConvenTech.Domain.ValueObject;
 
 namespace ConvenTech.Domain.Cliente
 {
-    public abstract class Cliente : Entity<Guid>
+    public class Cliente : Entity<Guid>
     {
-        protected Cliente() { }
-
         public string Nome { get; private set; }
         public Endereco Endereco { get; private set; }
         public string Telefone { get; private set; }
         public Email Email { get; private set; }
-        public Password Password { get; private set; }
-        public Usuario Usuario { get; private set; } = new Usuario();
-        public PlanoEnum Plano { get; set; }
-
+        public Password Password { get; private set; }        
+        public PlanoEnum Plano { get; set; }    
+       
     }
 }

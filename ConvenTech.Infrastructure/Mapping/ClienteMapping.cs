@@ -14,7 +14,15 @@ namespace ConvenTech.Infrastructure.Mapping
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Nome).IsRequired().HasMaxLength(200);
             builder.Property(x => x.Telefone).IsRequired();
+            builder.OwnsOne(x => x.Password, p =>
+            {
+                p.Property(f => f.Valor).HasColumnName("Password").IsRequired();
+            });
 
+            builder.OwnsOne(x => x.Email, p =>
+            {
+                p.Property(f => f.Valor).HasColumnName("Email").IsRequired();
+            });
         }
     }
 }
