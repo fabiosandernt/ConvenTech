@@ -1,6 +1,6 @@
 ﻿using ConvenTech.CrossCutting.BaseEntity;
-using ConvenTech.Domain.Account;
 using ConvenTech.Domain.ValueObject;
+
 
 namespace ConvenTech.Domain.Cliente
 {
