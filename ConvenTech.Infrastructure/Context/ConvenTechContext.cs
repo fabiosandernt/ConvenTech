@@ -1,4 +1,4 @@
-﻿using ConvenTech.Domain.Cliente;
+﻿using ConvenTech.Domain.Client;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConvenTech.Infrastructure.Context

@@ -1,5 +1,5 @@
 ﻿using ConvenTech.Domain.Account.Repository;
-using ConvenTech.Domain.Cliente.Repository;
+using ConvenTech.Domain.Client.Repository;
 using ConvenTech.Domain.InstrumentoColetivo.Repository;
 using ConvenTech.Infrastructure.Context;
 using ConvenTech.Infrastructure.Database;
