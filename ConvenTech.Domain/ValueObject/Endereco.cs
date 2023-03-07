@@ -24,5 +24,8 @@ namespace ConvenTech.Domain.ValueObject
         public string Estado { get;  }
         public string Cep { get;  }
 
+        public static Endereco Create(string logradouro, string numero, string complemento, string bairro, string cidade, string estado, string cep) =>
+        new Endereco(logradouro, numero, complemento, bairro, cidade, estado, cep);
+
     }
 }
