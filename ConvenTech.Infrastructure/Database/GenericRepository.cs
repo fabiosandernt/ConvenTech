@@ -63,5 +63,10 @@ namespace ConvenTech.Infrastructure.Database
             await Context.SaveChangesAsync();
 
         }
+
+        public async Task<bool> AnyAsync(Expression<Func<T, bool>> expression)
+        {
+            return await Query.AnyAsync(expression);
+        }
     }
 }

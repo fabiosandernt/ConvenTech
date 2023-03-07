@@ -1,4 +1,5 @@
-﻿using ConvenTech.CrossCutting.JwtService.Contracts;
+﻿using ConvenTech.Application.Service;
+using ConvenTech.CrossCutting.JwtService.Contracts;
 using Customer.CrossCutting.JwtService;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -22,8 +23,8 @@ namespace ConvenTech.Application
 
             services.AddMediatR(typeof(Application.ConfigurationModule).Assembly);
 
-            //services.AddScoped<IUsuarioService, UsuarioService>();
-            //services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
+           // services.AddScoped<IClienteService, ClienteService>();
 
             services.AddScoped<IJwtService, JwtService>();
             services.AddHttpClient();
