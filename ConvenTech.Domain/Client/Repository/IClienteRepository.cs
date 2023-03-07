@@ -2,7 +2,7 @@
 
 using ConvenTech.CrossCutting.GenericRepository;
 
-namespace ConvenTech.Domain.Cliente.Repository
+namespace ConvenTech.Domain.Client.Repository
 {
     public interface IClienteRepository : IGenericRepository<Cliente>
     {

@@ -23,8 +23,4 @@
     <ProjectReference Include="..\ConvenTech.Domain\ConvenTech.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dto\" />
-  </ItemGroup>
-
 </Project>

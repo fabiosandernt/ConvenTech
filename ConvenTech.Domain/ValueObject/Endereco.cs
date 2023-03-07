@@ -16,6 +16,7 @@ namespace ConvenTech.Domain.ValueObject
             string estado,
             string cep) => (Logradouro, Numero, Complemento, Bairro, Cidade, Estado, Cep) =  
             (logradouro, numero, complemento, bairro, cidade, estado, cep);
+
         public string Logradouro { get; }
         public string Numero { get; }
         public string Complemento { get;  }

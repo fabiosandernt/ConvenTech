@@ -1,6 +1,6 @@
 ﻿
 
-namespace ConvenTech.Domain.Cliente
+namespace ConvenTech.Domain.Client
 {
     public enum PlanoEnum
     {

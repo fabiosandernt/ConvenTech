@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConvenTech.Domain.Cliente
+namespace ConvenTech.Domain.Client
 {
     public enum TipoDocumentoEnum
     {    
