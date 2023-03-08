@@ -9,7 +9,9 @@ namespace ConvenTech.CrossCutting.GenericRepository
         Task Update(T entity);
         Task<T> Get(object id);
         Task<IEnumerable<T>> GetAll();
-        Task<IEnumerable<T>> FindAllByCriteria(Expression<Func<T, bool>> expression);
+        Task<IEnumerable<T>> FindAllByCriterio(Expression<Func<T, bool>> expression);
         Task<T> FindOneByCriterio(Expression<Func<T, bool>> expression);
+        Task<bool> AnyAsync(Expression<Func<T, bool>> expression);
+        Task<T> GetbyExpressionAsync(Expression<Func<T, bool>> expression);
     }
 }
