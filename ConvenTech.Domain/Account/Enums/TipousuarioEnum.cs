@@ -8,8 +8,8 @@ namespace ConvenTech.Domain.Account.Enums
         [Description("Administrador")]
         Administrador = 1,
 
-        [Description("Clínica")]
-        Clinica = 2,
+        [Description("Funcionário")]
+        Funcionário = 2,
 
         [Description("Cliente")]
         Cliente = 3,

@@ -1,7 +1,4 @@
-﻿
-
-
-using ConvenTech.CrossCutting.GenericRepository;
+﻿using ConvenTech.CrossCutting.GenericRepository;
 
 namespace ConvenTech.Domain.Account.Repository
 {
